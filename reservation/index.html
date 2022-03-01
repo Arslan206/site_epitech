@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Réservation</title>
+  </head>
+  <body>
+    <div class="wrapper reserv">
+      <header>
+        <nav class="nav flex flex-sb">
+          <h2 class="logo">GUSTOSA</h2>
+          <ul class="nav-menu flex">
+            <li><a href="/">Acceuil</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/reservation">Réservation</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container reservation-mg">
+        <h1 class="resto-title">Réservation</h1>
+        <p class="beige">Réserver ma table</p>
+        <p class="title-lead">
+          Pour réserver une table, veuillez choisir votre date de réservation et
+          l'heure
+        </p>
+      </div>
+
+      <div class="block-form">
+        <form class="reservation-form">
+          <div class="block-input">
+            <label for="name">Votre Nom :</label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div class="block-input">
+            <label for="phone">Votre Téléphone :</label>
+            <input id="phone" name="phone" type="text" />
+          </div>
+          <div class="block-input">
+            <label for="email">Votre Email :</label>
+            <input id="email" name="email" type="text" />
+          </div>
+          <div class="block-input input-columns flex">
+            <div class="column-1">
+              <div class="column-inner">
+                <label for="person">Nombre de personne :</label>
+                <input id="person" name="person" min="1" type="number" />
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="column-inner">
+                <label for="table">Type de table :</label>
+                <input id="table" name="table" min="1" type="number" />
+              </div>
+            </div>
+          </div>
+          <div class="block-input input-columns flex">
+            <div class="column-1">
+              <div class="column-inner ico-input">
+                <label for="date">Date :</label>
+                <input id="date" name="date" type="date" />
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="column-inner ico-input">
+                <label for="time">Heure :</label>
+                <input
+                  placeholder="(ex: 8:00 p.m)"
+                  id="time"
+                  name="time"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="submit">RÉSERVER UNE TABLE</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="flex flex-sb">
+          <h2 class="logo">GUSTOSA</h2>
+          <p class="copyright">© 2022 - Arslan</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

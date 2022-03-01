@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/app.js" defer></script>
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="wrapper menu">
+      <header>
+        <nav class="nav flex flex-sb">
+          <h2 class="logo">GUSTOSA</h2>
+          <ul class="nav-menu flex">
+            <li><a href="/">Acceuil</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/reservation">Réservation</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <h1 class="resto-title">Menu Gustosa</h1>
+            <p class="beige">des plats délicieux et variés</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="">
+              <ul class="block-tabs txt-center">
+                <li
+                  class="tablinks"
+                  onclick="openCity(event, 'breakfast')"
+                  id="defaultOpen"
+                >
+                  PETIT-DÉJEUNER
+                </li>
+                <li class="tablinks" onclick="openCity(event, 'lunch')">
+                  DÉJEUNER
+                </li>
+                <li class="tablinks" onclick="openCity(event, 'dessert')">
+                  DESSERT
+                </li>
+                <li class="tablinks" onclick="openCity(event, 'brevages')">
+                  BOISSONS
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <ul>
+              <li id="breakfast" class="block-list tabcontent">
+                <div class="flex flex-jc-center">
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>omelettes</h3>
+                    </div>
+                    <div>
+                      <h4>créer une omelette délicieuse</h4>
+                      <p>
+                        Sélectionnez quatre des éléments suivants :
+                        <br />
+                        bacon, jambon, saucisse, cheddar.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>omelette fermière</h4>
+                      <p>
+                        Pommes de terre sautées, bacon,
+                        <br />
+                        oignons grillés et fromage fondu.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>omelette du chef</h4>
+                      <p>
+                        Avocat, Champignons, Oignon Vert,
+                        <br />
+                        Tomate, Ail et Échalotes.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                  </div>
+
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>waffle</h3>
+                    </div>
+                    <div>
+                      <h4>waffle brunch</h4>
+                      <p>
+                        Une petite commande de pain perdu, <br />
+                        bacon et fraises.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>waffle benedict</h4>
+                      <p>
+                        Notre gaufre bénédictine garnie de <br />
+                        sirop de beurre d'érable.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>waffle belge</h4>
+                      <p>
+                        Disponible avec fraises, noix de pécan <br />
+                        et crème chantilly.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="lunch" class="block-list tabcontent">
+                <div class="flex flex-jc-center">
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>apéritifs</h3>
+                    </div>
+
+                    <div>
+                      <h4>beignets de crabe</h4>
+                      <p>Servi avec moutarde et sauce tartare.</p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>ailes de buffle</h4>
+                      <p>
+                        Ailes frites recouvertes de sauce piquante et servies
+                        avec une vinaigrette au fromage bleu.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>quesadilla</h4>
+                      <p>Tortilla Remplie de Fromage Fondu, Oignons Verts.</p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>roulés à la laitue</h4>
+                      <p>
+                        Créez vos propres rouleaux de laitue thaïlandaise !
+                        Lanières de Poulet Satay, Carottes.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>rolls aux oeufs tex mex</h4>
+                      <p>
+                        Poulet Épicé, Maïs, Haricots Noirs, Poivrons, Oignons et
+                        Fondant.
+                      </p>
+                      <span>14€</span>
+                    </div>
+
+                    <div class="txt-center">
+                      <div class="block-cat">
+                        <h3>kids</h3>
+                      </div>
+
+                      <div>
+                        <h4>pâtes pour enfants</h4>
+                        <p>
+                          Servi avec des pâtes farfalle. Choisissez parmi le
+                          beurre et le parmesan.
+                        </p>
+                        <span>14€</span>
+                      </div>
+                      <div>
+                        <h4>desserts enfants</h4>
+                        <p>
+                          Choisissez parmi une boule de crème glacée pour
+                          enfants et un mini fondant chaud pour enfants.
+                        </p>
+                        <span>14€</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>principale</h3>
+                    </div>
+
+                    <div>
+                      <h4>pizza et salade</h4>
+                      <p>
+                        Une version réduite de nos pizzas avec une petite salade
+                        verte.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>déjeuner pâtes</h4>
+                      <p>
+                        Choisissez parmi notre sélection de pâtes format
+                        déjeuner : Fettuccini Alfredo.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>déjeuner saumon</h4>
+                      <p>
+                        Votre choix entre : filet de saumon en croûte d'herbes,
+                        saumon miso.
+                      </p>
+                      <span>14€</span>
+                    </div>
+
+                    <div class="txt-center">
+                      <div class="block-cat">
+                        <h3>pizza</h3>
+                      </div>
+
+                      <div>
+                        <h4>PIZZA AU FROMAGE</h4>
+                        <p>
+                          Garni de fromages Mozzarella frais, Cheddar blanc et
+                          Fontina.
+                        </p>
+                        <span>14€</span>
+                      </div>
+                      <div>
+                        <h4>PIZZA AU PEPPERONI</h4>
+                        <p>
+                          Fromages frais Mozzarella et Fontina et est garni.
+                        </p>
+                        <span>14€</span>
+                      </div>
+                      <div>
+                        <h4>UN BARBECUE. PIZZA AU POULET</h4>
+                        <p>Gouda fumé, oignon rouge et coriandre.</p>
+                        <span>14€</span>
+                      </div>
+                      <div>
+                        <h4>PIZZA MARGHERITA</h4>
+                        <p>Mozzarella fraîche, basilic et sauce tomate.</p>
+                        <span>14€</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="dessert" class="block-list tabcontent">
+                <div class="flex flex-jc-center">
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>cheesecake</h3>
+                    </div>
+
+                    <div>
+                      <h4>ORIGINAL</h4>
+                      <p>
+                        Notre célèbre gâteau au fromage crémeux avec une croûte
+                        de biscuits Graham.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>CHEESECAKE AUX FRAISES</h4>
+                      <p>L'original garni de fraises fraîches glacées.</p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>CHEESECAKE AU CITRON MERINGUE</h4>
+                      <p>
+                        Gâteau au fromage à la crème de citron garni de couches
+                        de mousse au citron.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>CHEESECAKE À LA MANGUE ET AU CITRON VERT</h4>
+                      <p>
+                        Garni de mousse à la mangue sur une croûte de macaron à
+                        la vanille et à la noix de coco.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>CHEESECAKE TIRAMISU</h4>
+                      <p>
+                        Notre merveilleux gâteau au fromage et notre tiramisu
+                        combinés en un seul dessert.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>CHEESECAKE À FAIBLE TENEUR EN CARBONE</h4>
+                      <p>
+                        Doux et crémeux avec une croûte de noix sucrée à la
+                        stévia.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                  </div>
+
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>glace</h3>
+                    </div>
+
+                    <div>
+                      <h4>SUNDAE AU FUDGE CHAUD</h4>
+                      <p>Garni de crème fouettée et d'amandes.</p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>COUPE BROWNIE AU CHOCOLAT</h4>
+                      <p>
+                        Notre fabuleux brownie au chocolat Godiva, crème glacée
+                        à la vanille, fondant chaud.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>BOL DE GLACE</h4>
+                      <p>
+                        Deux boules et demie au choix Vanille ou Café Glacé.
+                      </p>
+                      <span>14€</span>
+                    </div>
+
+                    <div class="txt-center">
+                      <div class="block-cat">
+                        <h3>spécialité</h3>
+                      </div>
+
+                      <div>
+                        <h4>GÂTEAU À LA CAROTTE</h4>
+                        <p>
+                          Des couches délicieusement moelleuses de gâteau aux
+                          carottes et notre célèbre crème.
+                        </p>
+                        <span>14€</span>
+                      </div>
+                      <div>
+                        <h4>GÂTEAU BLACK-OUT</h4>
+                        <p>
+                          Notre gâteau au chocolat le plus profond et le plus
+                          riche avec des pépites de chocolat.
+                        </p>
+                        <span>14€</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="brevages" class="block-list tabcontent">
+                <div class="flex flex-jc-center">
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>boissons glacées</h3>
+                    </div>
+
+                    <div>
+                      <h4>smoothie fraise et fruits</h4>
+                      <p>
+                        Fraises, jus d'orange et d'ananas, noix de coco et
+                        banane.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>smoothie tropical</h4>
+                      <p>
+                        Mangue, fruit de la passion, ananas et noix de coco
+                        mélangés avec de la glace.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>mangue glacée surgelée</h4>
+                      <p>
+                        Mangue, jus tropicaux et un soupçon de noix de coco
+                        mélangés avec de la glace et.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>smoothie pêche</h4>
+                      <p>
+                        Pêches et jus broyés, tous mélangés avec de la glace et
+                        tourbillonnés avec.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                  </div>
+
+                  <div class="txt-center">
+                    <div class="block-cat">
+                      <h3>boissons chaudes</h3>
+                    </div>
+
+                    <div>
+                      <h4>café laté</h4>
+                      <p>Double expresso, lait extra cuit à la vapeur.</p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>café moka</h4>
+                      <p>Espresso, chocolat, lait vapeur, crème fouettée.</p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>chocolat chaud</h4>
+                      <p>
+                        Une énorme portion de vrai chocolat chaud avec <br />
+                        de la crème fouettée.
+                      </p>
+                      <span>14€</span>
+                    </div>
+                    <div>
+                      <h4>double espresso</h4>
+                      <p>Profitez du double shot d'espresso.</p>
+                      <span>14€</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="flex flex-sb">
+          <h2 class="logo">GUSTOSA</h2>
+          <p class="copyright">© 2022 - Arslan</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
